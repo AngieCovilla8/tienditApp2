@@ -20,4 +20,6 @@
     <string name="correo">Correo</string>
     <string name="contraseña">Contraseña</string>
     <string name="nombre">Ingresa tu nombre</string>
+    <string name="email">Ingresa tu correo</string>
+    <string name="correo1">Ingresa tu correo</string>
 </resources>
