@@ -32,6 +32,7 @@
             style="@android:style/Widget.DeviceDefault.Light.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
             android:text="@string/login"
             android:textColor="@color/black"
             android:textSize="48sp"
@@ -74,6 +75,17 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="366dp"
+            android:layout_height="405dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/tienditapp1"
+            tools:layout_editor_absoluteY="-52dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
