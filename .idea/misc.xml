@@ -6,6 +6,10 @@
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_bienvenida.xml" value="0.18" />
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_registro.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/header.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.36822916666666666" />
       </map>
     </option>
   </component>
