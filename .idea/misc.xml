@@ -6,8 +6,24 @@
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_bienvenida.xml" value="0.18" />
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Angie/Documents/GitHub/tienditApp2/app/src/main/res/layout/activity_registro.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.384375" />
+        <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.384375" />
+        <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.384375" />
+        <entry key="app/src/main/res/drawable/ic_tienditapp.xml" value="0.384375" />
+        <entry key="app/src/main/res/drawable/loging_icon.xml" value="0.384375" />
+        <entry key="app/src/main/res/layout/activity_bienvenida.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/activity_registro.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_nav_reporte.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_proveedores.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/header.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/menu/main.xml" value="0.36822916666666666" />
       </map>

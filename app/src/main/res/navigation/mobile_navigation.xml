@@ -22,4 +22,19 @@
         android:name="com.example.intento.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.example.intento.nav_productos"
+        android:label="fragment_nav_productos"
+        tools:layout="@layout/fragment_nav_productos" />
+    <fragment
+        android:id="@+id/nav_proveedor"
+        android:name="com.example.intento.nav_proveedor"
+        android:label="fragment_nav_proveedor"
+        tools:layout="@layout/fragment_nav_proveedor" />
+    <fragment
+        android:id="@+id/nav_reporte"
+        android:name="com.example.intento.nav_reporte"
+        android:label="fragment_nav_reporte"
+        tools:layout="@layout/fragment_nav_reporte" />
 </navigation>
