@@ -36,10 +36,11 @@ public class Registro extends AppCompatActivity {
         this.registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Registro Completado",Snackbar.LENGTH_LONG).show();
+
                 Intent loging =new  Intent(Registro.this,Login.class);
                 startActivity(loging);
-
+                Snackbar.make(v, "REGISTRO COMPLETO", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
 
             }
         });

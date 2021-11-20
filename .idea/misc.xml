@@ -19,6 +19,8 @@
         <entry key="app/src/main/res/layout/content_main.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_nav_productos.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/fragment_nav_proveedor.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/fragment_nav_reporte.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/fragment_proveedores.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.36822916666666666" />
