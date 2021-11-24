@@ -3,23 +3,20 @@ package com.example.intento;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 
-public class Proveedores extends AppCompatActivity {
+public class Reporte extends AppCompatActivity {
 
 
 
-    public Proveedores() {
+
+
+    public Reporte() {
         // Required empty public constructor
     }
 
@@ -28,11 +25,8 @@ public class Proveedores extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_proveedores);
-
+        setContentView(R.layout.fragment_nav_reporte);
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,7 +39,7 @@ public class Proveedores extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_proveedor:
                 Intent intent = new Intent(this, Proveedor.class);
                 startActivity(intent);
@@ -61,8 +55,13 @@ public class Proveedores extends AppCompatActivity {
                 startActivity(intent1);
                 return true;
 
-            default: return false;
-        }
+            case R.id.nav_home:
+                Intent intent3 = new Intent(this, Home.class);
+                startActivity(intent3);
+                return true;
 
+            default:
+                return false;
+        }
     }
 }

@@ -22,10 +22,38 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_login"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+             />
+        <activity
+            android:name=".Reporte"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="Reporte"
             android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-            android:parentActivityName=".Bienvenida"
+                        />
+        <activity
+            android:name=".Productos"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="Productos"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
             />
 
+        <activity
+            android:name=".Proveedores"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="Proveedores"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
+
+        <activity
+            android:name=".Proveedor"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="Proveedor"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
 
         <activity
             android:name=".Bienvenida"
@@ -40,12 +68,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Home"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Intento.NoActionBar">
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
 
-        </activity>
+
     </application>
 
 </manifest>

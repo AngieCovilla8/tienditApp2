@@ -3,7 +3,6 @@ package com.example.intento;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -15,24 +14,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class Proveedores extends AppCompatActivity {
+public class Productos extends AppCompatActivity {
 
 
 
-    public Proveedores() {
+    public Productos() {
         // Required empty public constructor
     }
+
 
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_proveedores);
+        setContentView(R.layout.fragment_nav_productos);
 
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,7 +43,7 @@ public class Proveedores extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_proveedor:
                 Intent intent = new Intent(this, Proveedor.class);
                 startActivity(intent);
@@ -61,8 +59,8 @@ public class Proveedores extends AppCompatActivity {
                 startActivity(intent1);
                 return true;
 
-            default: return false;
+            default:
+                return false;
         }
-
     }
 }

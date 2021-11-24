@@ -24,17 +24,17 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_productos"
-        android:name="com.example.intento.nav_productos"
-        android:label="fragment_nav_productos"
+        android:name="com.example.intento.Productos"
+        android:label="@string/producto"
         tools:layout="@layout/fragment_nav_productos" />
     <fragment
         android:id="@+id/nav_proveedor"
-        android:name="com.example.intento.nav_proveedor"
-        android:label="fragment_nav_proveedor"
+        android:name="com.example.intento.Proveedor"
+        android:label="@string/proveedor"
         tools:layout="@layout/fragment_nav_proveedor" />
     <fragment
         android:id="@+id/nav_reporte"
-        android:name="com.example.intento.nav_reporte"
-        android:label="fragment_nav_reporte"
+        android:name="com.example.intento.Reporte"
+        android:label="@string/reporte"
         tools:layout="@layout/fragment_nav_reporte" />
 </navigation>
