@@ -27,6 +27,7 @@
     <string name="reporte">Reportes</string>
     <string name="perfil">Mi Perfil</string>
     <string name="logout">LogOut</string>
+    <string name="ContrseñaInvalida">Contraseña o usuario erroneos</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

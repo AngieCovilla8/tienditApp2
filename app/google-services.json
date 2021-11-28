@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768098408336",
+    "project_id": "tiendapp-91c61",
+    "storage_bucket": "tiendapp-91c61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768098408336:android:16d597d1a4e68bdd8b4515",
+        "android_client_info": {
+          "package_name": "com.example.intento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768098408336-8a81oepkpnvdb5rmv8f6job4722c3ej0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANrDFrHBmYd6qPgU2-Li1WJ0LNKqXXjAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768098408336-8a81oepkpnvdb5rmv8f6job4722c3ej0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

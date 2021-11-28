@@ -15,6 +15,7 @@ import android.view.WindowInsets;
 import android.widget.Button;
 
 import com.example.intento.databinding.ActivityBienvenidaBinding;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -24,6 +25,7 @@ public class Bienvenida extends AppCompatActivity {
 
     Button login, registro;
 
+    private FirebaseAuth Autenticador;
 
 
     @Override
@@ -50,6 +52,7 @@ public class Bienvenida extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Autenticador = FirebaseAuth.getInstance();
     }
 
 
