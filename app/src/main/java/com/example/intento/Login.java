@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.intento.databinding.ActivityLoginBinding;
@@ -34,6 +35,7 @@ public class Login extends AppCompatActivity {
     Button login;
     private ActivityLoginBinding binding;
     private FirebaseAuth Autentificador;
+    private EditText correo,contrasena;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +44,14 @@ public class Login extends AppCompatActivity {
        setContentView(R.layout.activity_login);
 
         this.login= findViewById(R.id.button2);
+        this.correo= findViewById(R.id.correologin);
+        this.contrasena=findViewById(R.id.passlogin);
         this.login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usuario = binding.correologin.getText().toString();
-                String contraseña = binding.passlogin.getText().toString();
-                Autentificador.signInWithEmailAndPassword(usuario, contraseña)
+                String usuario = correo.getText().toString();
+                String contra = contrasena.getText().toString();
+                Autentificador.signInWithEmailAndPassword(usuario, contra)
                         .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
