@@ -18,6 +18,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowInsets;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.intento.databinding.ActivityRegistroBinding;
@@ -36,6 +37,7 @@ public class Registro extends AppCompatActivity {
 
     Button registro;
     private FirebaseAuth Autenticador;
+    private EditText correo,contrasena;
     private ActivityRegistroBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,16 +46,18 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
 
         this.registro= findViewById(R.id.button);
+        this.correo=findViewById(R.id.correologin);
+        this.contrasena=findViewById(R.id.passlogin);
         this.registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usuario = binding.editTextTextPersonName.getText().toString();
-                String contraseña = binding.editTextTextEmailAddress2.getText().toString();
-                if (usuario.isEmpty() || contraseña.isEmpty()) {
+                String usuario = correo.getText().toString();
+                String contra = contrasena.getText().toString();
+                if (usuario.isEmpty() || contra.isEmpty()) {
                     Snackbar.make(v, R.string.ContrseñaInvalida, Snackbar.LENGTH_LONG).show();
                 }
                 else{
-                Autenticador.createUserWithEmailAndPassword(usuario, contraseña)
+                Autenticador.createUserWithEmailAndPassword(usuario, contra)
                         .addOnCompleteListener(Registro.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -70,11 +74,12 @@ public class Registro extends AppCompatActivity {
                                 }
                             }
                         });
+                Intent loging =new  Intent(Registro.this,Login.class);
+                startActivity(loging);
+                Snackbar.make(v, "REGISTRO COMPLETO", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
                 }
-//                Intent loging =new  Intent(Registro.this,Login.class);
-//                startActivity(loging);
-//                Snackbar.make(v, "REGISTRO COMPLETO", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
+
 
             }
         });
