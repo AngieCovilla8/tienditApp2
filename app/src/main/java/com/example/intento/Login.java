@@ -36,6 +36,7 @@ public class Login extends AppCompatActivity {
     private ActivityLoginBinding binding;
     private FirebaseAuth Autentificador;
     private EditText correo,contrasena;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,37 +44,33 @@ public class Login extends AppCompatActivity {
        setContentView(R.layout.activity_login);
 
         this.login= findViewById(R.id.button2);
-        this.correo=findViewById(R.id.correologin);
+        this.correo= findViewById(R.id.correologin);
         this.contrasena=findViewById(R.id.passlogin);
         this.login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String usuario = correo.getText().toString();
                 String contra = contrasena.getText().toString();
-                if (usuario.isEmpty() || contra.isEmpty()) {
-                    Snackbar.make(v, R.string.ContrseñaInvalida, Snackbar.LENGTH_LONG).show();
-                }
-                else {
-                    Autentificador.signInWithEmailAndPassword(usuario, contra)
-                            .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        // Sign in success, update UI with the signed-in user's information
-                                        Log.d(TAG, "SignWithEmail:success");
-                                        FirebaseUser user = Autentificador.getCurrentUser();
-                                        Intent home = new Intent(Login.this, Reporte.class);
-                                        startActivity(home);
-                                    } else {
-                                        // If sign in fails, display a message to the user.
-                                        Log.w(TAG, "SignWithEmail:failure", task.getException());
-                                        Toast.makeText(Login.this, "Authentication failed.",
-                                                Toast.LENGTH_SHORT).show();
-                                        Snackbar.make(v, "Error", Snackbar.LENGTH_LONG).show();
-                                    }
+                Autentificador.signInWithEmailAndPassword(usuario, contra)
+                        .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    Log.d(TAG, "SignWithEmail:success");
+                                    FirebaseUser user = Autentificador.getCurrentUser();
+                                    Intent home=new  Intent(Login.this, Reporte.class);
+                                    startActivity(home);
+                                } else {
+                                    // If sign in fails, display a message to the user.
+                                    Log.w(TAG, "SignWithEmail:failure", task.getException());
+                                    Toast.makeText(Login.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                    Snackbar.make(v,"Error",Snackbar.LENGTH_LONG).show();
                                 }
-                            });
-                }
+                            }
+                        });
+
             }
 
         });
