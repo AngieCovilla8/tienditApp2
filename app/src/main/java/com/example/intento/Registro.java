@@ -46,8 +46,8 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
 
         this.registro= findViewById(R.id.button);
-        this.correo=findViewById(R.id.correologin);
-        this.contrasena=findViewById(R.id.passlogin);
+        this.correo=findViewById(R.id.editTextTextEmailAddress);
+        this.contrasena=findViewById(R.id.editTextTextPassword);
         this.registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
