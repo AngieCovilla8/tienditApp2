@@ -3,58 +3,51 @@
     package="com.example.intento">
 
     <application
-
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Intento">
         <activity
+            android:name=".Inventario"
+            android:exported="false" />
+        <activity
             android:name=".Registro"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_registro"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:parentActivityName=".Bienvenida"
-            />
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".Login"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_login"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-             />
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".Reporte"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="Reporte"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-                        />
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
         <activity
             android:name=".Productos"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="Productos"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-            />
-
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
         <activity
             android:name=".Proveedores"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="Proveedores"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-            />
-
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
         <activity
             android:name=".Proveedor"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="Proveedor"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-            />
-
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
         <activity
             android:name=".Bienvenida"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -71,10 +64,7 @@
             android:name=".Home"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
-            />
-
-
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
     </application>
 
 </manifest>

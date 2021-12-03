@@ -37,4 +37,9 @@
         android:name="com.example.intento.Reporte"
         android:label="@string/reporte"
         tools:layout="@layout/fragment_nav_reporte" />
+    <activity
+        android:id="@+id/nav_inventario"
+        android:name="com.example.intento.Inventario"
+        android:label="activity_inventario"
+        tools:layout="@layout/activity_inventario" />
 </navigation>

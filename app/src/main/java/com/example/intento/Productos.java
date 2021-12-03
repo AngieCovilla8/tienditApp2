@@ -15,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -31,6 +32,7 @@ public class Productos extends AppCompatActivity {
     DatabaseReference database;
     Adapter myAdapter;
     ArrayList<Items> list;
+
 
 
     public Productos() {
@@ -67,6 +69,7 @@ public class Productos extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
@@ -94,6 +97,11 @@ public class Productos extends AppCompatActivity {
             case R.id.nav_productos:
                 Intent intent1 = new Intent(this, Productos.class);
                 startActivity(intent1);
+                return true;
+
+            case R.id.nav_inventario:
+                Intent intent3 = new Intent(this, Inventario.class);
+                startActivity(intent3);
                 return true;
 
             default:
